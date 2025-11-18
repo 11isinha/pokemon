@@ -1,0 +1,108 @@
+@import url('https://fonts.cdnfonts.com/css/shine-coasty');
+@import url('https://fonts.cdnfonts.com/css/artist');
+@import url('https://fonts.cdnfonts.com/css/altair');
+/* Fonte e reset básico */
+.header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espaço entre img - título - img */
+}
+
+/* Ajuste das imagens */
+.header-img {
+    width: 70px;  /* Ajuste conforme desejar */
+    height: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Altair', sans-serif;
+    font-size: 1.3rem;
+    background: #f0f0f0;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(90deg, #dd0606, #dddddf);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-family: 'Shine Coasty', sans-serif;
+    font-size: 3rem;
+    margin: 0;
+}
+
+/* Área principal */
+main {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.links-container {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    width: 80%;
+    max-width: 800px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.links-container h2 {
+    text-align: center;
+    color: #830808;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    font-family: 'Shine Coasty', sans-serif;
+}
+
+/* Lista de links */
+.link-list {
+    list-style: none;
+    padding: 0;
+}
+
+.link-list li {
+    margin: 10px 0;
+    background: #8ec5cc;
+    border-radius: 8px;
+    transition: 0.3s;
+    overflow: hidden; /* Garante que o link respeite a borda arredondada */
+}
+
+.link-list li:hover {
+    background: #fa6868;
+    transform: scale(1.02);
+}
+
+/* O Link agora ocupa o espaço todo do li */
+.link-list a {
+    display: block; /* Faz o link ocupar a linha toda */
+    padding: 12px 18px; /* Padding movido para cá para aumentar área de clique */
+    color: #5e0101;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1.1rem;
+    width: 100%; /* Garante largura total */
+    box-sizing: border-box;
+    font-family: 'Artist', sans-serif;
+}
+
+.link-list li:hover a {
+    color: white; /* Muda a cor do texto para branco ao passar o mouse */
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #830202;
+    color: white;
+    margin-top: 40px;
+   font-family: 'Altair', sans-serif;
+}
